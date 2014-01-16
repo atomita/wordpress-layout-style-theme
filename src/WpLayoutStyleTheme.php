@@ -34,7 +34,7 @@ class WpLayoutStyleTheme {
 				return false;
 			}
 		}
-		echo $contents;
+		include dirname(__FILE__) . DIRECTORY_SEPARATOR . 'wp-layout-style-theme' . DIRECTORY_SEPARATOR . 'default.php';
 		return false;
 	}
 	
