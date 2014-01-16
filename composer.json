@@ -1,0 +1,10 @@
+{
+	"name": "atomita/wp-layout-style-theme",
+	"require": {
+	},
+	"repositories": [
+	],
+	"autoload": {
+		"psr-0": {"": ["src/"]}
+	}
+}
