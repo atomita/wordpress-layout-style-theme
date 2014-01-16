@@ -1,9 +1,8 @@
 {
 	"name": "atomita/wp-layout-style-theme",
-	"require": {
-	},
-	"repositories": [
-	],
+	"keywords": ["wordpress", "theme"],
+	"license": "MIT",
+	"version": "0.0.1",
 	"autoload": {
 		"psr-0": {"": ["src/"]}
 	}
