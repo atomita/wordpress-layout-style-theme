@@ -27,14 +27,16 @@ class WpLayoutStyleTheme {
 		}
 		$layouts[]= 'default';
 
+		$paths = array();
 		foreach($layouts as $layout) {
-			$path = TEMPLATEPATH . implode(DIRECTORY_SEPARATOR, explode('/', '/layout/' . $layout . '.php'));
-			if (file_exists($path)) {
-				include $path;
-				return false;
-			}
+			$paths[] = 'layout/' . $layout . '.php';
 		}
-		include dirname(__FILE__) . DIRECTORY_SEPARATOR . 'wp-layout-style-theme' . DIRECTORY_SEPARATOR . 'default.php';
+		if ($path = locate_template($paths, false)) {
+			include $path;
+		}
+		else {
+			include dirname(__FILE__) . DIRECTORY_SEPARATOR . 'wp-layout-style-theme' . DIRECTORY_SEPARATOR . 'default.php';
+		}
 		return false;
 	}
 	
