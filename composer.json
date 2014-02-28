@@ -1,7 +1,7 @@
 {
 	"name": "atomita/wp-layout-style-theme",
 	"keywords": ["wordpress", "theme"],
-	"license": "MIT",
+	"license": "LGPLv3",
 	"version": "0.0.3",
 	"autoload": {
 		"psr-0": {"": ["src/"]}
