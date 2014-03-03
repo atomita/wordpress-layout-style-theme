@@ -3,7 +3,7 @@
 namespace Atomita\Wordpress;
 
 /**
- * LayoutStyleThemFacade
+ * LayoutStyleThemeFacade
  * 
  * @author atomita
  */
@@ -13,7 +13,7 @@ class LayoutStyleThemeFacade extends \Atomita\Facade
 	{
 		static $instance;
 		if (!isset($instance)){
-			$instance = new LayoutStyleThem();
+			$instance = new LayoutStyleTheme();
 		}
 		return $instance;
 	}
