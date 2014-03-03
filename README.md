@@ -3,7 +3,7 @@ Wordpress Layout Style Theme
 
 This is intended to be able to use the "layout" in the file of the theme of wordpress.  
 
-Need to call the "wp_head" function or the like in the "template of content (single.php, index.php, etc.)" will be lost when you use this.  
+Need to call the "get_header" function or the like in the "template of content (single.php, index.php, etc.)" will be lost when you use this.  
 "template of content" you can focus on content for it. 
 
 ## Get started
