@@ -11,14 +11,15 @@ if (false){
 	{
 		var $layout		  = 'default';
 		var $contents_varname = 'contents';
-		var $layouts_dirname  = 'layout';
+		var $layouts_dir	  = 'layout';
 
 		protected $priority;
 	
 		/**
+		 * @param	$layouts_dir	string	layouts directory name
 		 * @param	$priority	int	priority of wordpress filter
 		 */
-		function __construct($priority = PHP_INT_MAX){}
+		function __construct($layouts_dir = 'layout', $priority = PHP_INT_MAX){}
 
 		/**
 		 * set wordpress filter
