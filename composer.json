@@ -2,8 +2,11 @@
 	"name": "atomita/wp-layout-style-theme",
 	"keywords": ["wordpress", "theme"],
 	"license": "LGPLv3",
-	"version": "0.0.3",
+	"version": "0.1.0",
+	"require": {
+		"atomita/php-facade": "*"
+	},
 	"autoload": {
-		"psr-0": {"": ["src/"]}
+		"classmap": ["src", "src/Atomita/Wordpress/"]
 	}
 }
