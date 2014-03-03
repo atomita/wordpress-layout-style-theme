@@ -31,4 +31,8 @@ Atomita_Wordpress_LayoutStyleThemeFacade::initialize();
 
 ## LICENSE
 
-This is released under the LGPLv3, see LICENSE.
+This is released under the LGPLv3, see LICENSE.  
+  
+
+
+Copyright (c) 2013 atomita
