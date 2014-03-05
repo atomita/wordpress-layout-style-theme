@@ -35,4 +35,4 @@ This is released under the LGPLv3, see LICENSE.
   
 
 
-Copyright (c) 2013 atomita
+Copyright (c) 2014 atomita
