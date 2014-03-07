@@ -9,9 +9,8 @@ namespace Atomita\Wordpress;
  */
 class LayoutStyleTheme
 {
-	var $layout		  = 'default';
-	var $contents_varname = 'contents';
-	
+	protected $layout	   = 'default';
+	protected $varname	   = 'contents';
 	protected $layouts_dir = 'layout';
 	protected $priority;
 	
@@ -23,6 +22,28 @@ class LayoutStyleTheme
 	{
 		$this->layouts_dir = $layouts_dir;
 		$this->priority    = $priority;
+	}
+	
+	/**
+	 * set layout-name and get
+	 */
+	function layout($name = '')
+	{
+		if (!empty($name)){
+			$this->layout = $name;
+		}
+		return $this->layout;
+	}
+	
+	/**
+	 * set contents-varname and get
+	 */
+	function varname($name = '')
+	{
+		if (!empty($name)){
+			$this->varname = $name;
+		}
+		return $this->varname;
 	}
 
 	/**
@@ -49,7 +70,7 @@ class LayoutStyleTheme
 		
 		ob_start();
 		include $template;
-		${$this->contents_varname} = ob_get_clean();
+		${$this->varname} = ob_get_clean();
 		
 		$layouts = array();
 		if ('default' != $this->layout) {
