@@ -3,7 +3,7 @@
 namespace Atomita\Wordpress;
 
 /**
- * LayoutStyleThem
+ * LayoutStyleTheme
  * 
  * @author atomita
  */
