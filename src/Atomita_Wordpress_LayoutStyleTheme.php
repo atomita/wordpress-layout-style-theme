@@ -3,7 +3,7 @@
 if (false){
 	
 	/**
-	 * Atomita_Wordpress_LayoutStyleThem
+	 * Atomita_Wordpress_LayoutStyleTheme
 	 * 
 	 * @author atomita
 	 */
