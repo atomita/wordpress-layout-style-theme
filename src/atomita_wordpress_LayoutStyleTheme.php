@@ -3,11 +3,11 @@
 if (false){
 	
 	/**
-	 * Atomita_Wordpress_LayoutStyleTheme
+	 * atomita_wordpress_LayoutStyleTheme
 	 * 
 	 * @author atomita
 	 */
-	class Atomita_Wordpress_LayoutStyleTheme
+	class atomita_wordpress_LayoutStyleTheme
 	{
 		var $layout		  = 'default';
 		var $contents_varname = 'contents';
@@ -40,7 +40,7 @@ if (false){
 
 }
 else{
-	$file = '/Atomita/Wordpress/LayoutStyleTheme.php';
+	$file = '/atomita/wordpress/LayoutStyleTheme.php';
 	if ('/' != DIRECTORY_SEPARATOR){
 		$file = str_replace('/', DIRECTORY_SEPARATOR, $file);
 	}
@@ -49,13 +49,13 @@ else{
 
 	eval(str_replace(
 		array(
-			'namespace Atomita\\Wordpress;',
+			'namespace atomita\\wordpress;',
 			'class LayoutStyleTheme',
 			'include rtrim(__FILE__, \'.php\') . DIRECTORY_SEPARATOR . \'default.php\';',
 		),
 		array(
 			'',
-			'class Atomita_Wordpress_LayoutStyleTheme',
+			'class atomita_wordpress_LayoutStyleTheme',
 			'include dirname(__FILE__) . DIRECTORY_SEPARATOR . str_replace(\'_\', DIRECTORY_SEPARATOR, rtrim(basename(__FILE__), \'.php\')) . \'default.php\';',
 		),
 		$definition));

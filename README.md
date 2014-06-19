@@ -8,9 +8,9 @@ Need to call the "get_header" function or the like in the "template of content (
 
 ## Get started
 
-Install the "atomita/wp-layout-style-theme" using the composer.  
+Install the "atomita/wordpress-layout-style-theme" using the composer.  
 
-Copy the "wp-content/themes/{theme-name}/layout/default.php" to "src/Atomita/Wordpress/LayoutStyleTheme/default.php".  
+Copy to the "wp-content/themes/{theme-name}/layout/default.php" from "src/atomita/wordpress/LayoutStyleTheme/default.php".  
 And be customized.  
 
 Describe the following at the "functions.php".  
@@ -18,14 +18,14 @@ Describe the following at the "functions.php".
 **PHP 5.3 or more**
 ```php
 require {composer install dir} . "/vendor/autoload.php";
-use Atomita\Wordpress\LayoutStyleThemeFacade as LayoutStyleTheme;
+use \atomita\wordpress\LayoutStyleThemeFacade as LayoutStyleTheme;
 LayoutStyleTheme::initialize();
 ```
 
 **Less than PHP 5.3**
 ```php
 require {composer install dir} . "/vendor/autoload.php";
-Atomita_Wordpress_LayoutStyleThemeFacade::initialize();
+atomita_wordpress_LayoutStyleThemeFacade::initialize();
 ```
 
 

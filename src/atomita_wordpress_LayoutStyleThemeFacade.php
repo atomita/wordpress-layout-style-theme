@@ -1,17 +1,17 @@
 <?php
 
 /**
- * Atomita_Wordpress_LayoutStyleThemeFacade
+ * atomita_wordpress_LayoutStyleThemeFacade
  * 
  * @author atomita
  */
-class Atomita_Wordpress_LayoutStyleThemeFacade
+class atomita_wordpress_LayoutStyleThemeFacade
 {
 	static protected function facadeInstance()
 	{
 		static $instance;
 		if (!isset($instance)){
-			$instance = new Atomita_Wordpress_LayoutStyleTheme();
+			$instance = new atomita_wordpress_LayoutStyleTheme();
 		}
 		return $instance;
 	}
